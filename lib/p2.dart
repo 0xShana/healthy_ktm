@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
                   padding: EdgeInsets.all(30.0),
                   child: Column(
                     children: <Widget>[
-                      FadeAnimation(1.5, Text("WELCOME TO HEALTHY KOTTAYAM !", style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),)),
+                      FadeAnimation(1.5, Text("WELCOME TO HEALTHY KOTTAYAM ", style: TextStyle(color: Colors.black, fontSize: 43, fontWeight: FontWeight.bold),)),
                       FadeAnimation(1.8, Container(
                         padding: EdgeInsets.all(5),
                         decoration: BoxDecoration(
@@ -61,13 +61,12 @@ class HomePage extends StatelessWidget {
                             Container(
                               padding: EdgeInsets.all(8.0),
                               decoration: BoxDecoration(
-                                  border: Border(bottom: BorderSide(color: Colors.grey[100]))
                               ),
                               child: TextField(
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
                                     hintText: "Enter OTP ",
-                                    hintStyle: TextStyle(color: Colors.grey[400])
+                                    hintStyle: TextStyle(color: Colors.grey[800])
                                 ),
                               ),
                             ),
@@ -83,7 +82,7 @@ class HomePage extends StatelessWidget {
                             gradient: LinearGradient(
                                 begin: Alignment.topRight,
                                 end: Alignment.bottomLeft,
-                                colors: [Colors.white, Colors.blue])
+                                colors: [Color(0xFF02A0C7),Color(0xFF13007D)])
                         ),
                         child: Center(
                           child: Text("VERIFY OTP", style: TextStyle(color: Colors.white,fontSize: 30, fontWeight: FontWeight.bold),),

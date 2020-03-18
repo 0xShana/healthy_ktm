@@ -17,7 +17,6 @@ class HomePage extends StatelessWidget {
           child: Container(
             child: Column(
               children: <Widget>[
-
                 Container(
                   height: 400,
                   decoration: BoxDecoration(
@@ -31,6 +30,7 @@ class HomePage extends StatelessWidget {
                   padding: EdgeInsets.all(30.0),
                   child: Column(
                     children: <Widget>[
+                      FadeAnimation(1.5, Text("WELCOME TO HEALTHY KOTTAYAM ", style: TextStyle(color: Colors.black, fontSize: 43, fontWeight: FontWeight.bold),)),
                       FadeAnimation(1.8, Container(
                         padding: EdgeInsets.all(5),
                         decoration: BoxDecoration(
@@ -46,31 +46,31 @@ class HomePage extends StatelessWidget {
                         ),
                         child: Column(
                           children: <Widget>[
-                            FadeAnimation(1.5, Text("WELCOME TO HEALTHY KOTTAYAM !", style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),)),
+                            /*Container(
+														padding: EdgeInsets.all(8.0),
+														child: TextField(
+															decoration: InputDecoration(    // welcome text
+																	border: InputBorder.none,
+																	hintText: "Password",
+																	hintStyle: TextStyle(color: Colors.grey[400])
+															),
+														),
+													),*/
+
 
                             Container(
                               padding: EdgeInsets.all(8.0),
                               decoration: BoxDecoration(
-                                  border: Border(bottom: BorderSide(color: Colors.grey[100]))
                               ),
                               child: TextField(
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
-                                    hintText: "User name",
-                                    hintStyle: TextStyle(color: Colors.grey[400])
+                                    hintText: "Enter phone number ",
+                                    hintStyle: TextStyle(color: Colors.grey[800])
                                 ),
                               ),
                             ),
-                            Container(
-                              padding: EdgeInsets.all(8.0),
-                              child: TextField(
-                                decoration: InputDecoration(
-                                    border: InputBorder.none,
-                                    hintText: "Password",
-                                    hintStyle: TextStyle(color: Colors.grey[400])
-                                ),
-                              ),
-                            )
+
                           ],
                         ),
                       )),
@@ -82,16 +82,14 @@ class HomePage extends StatelessWidget {
                             gradient: LinearGradient(
                                 begin: Alignment.topRight,
                                 end: Alignment.bottomLeft,
-                                colors: [Colors.white, Colors.blue])
+                                colors: [Color(0xFF02A0C7),Color(0xFF13007D)])
                         ),
                         child: Center(
-                          child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                          child: Text("send  OTP", style: TextStyle(color: Colors.white,fontSize: 30, fontWeight: FontWeight.bold),),
                         ),
                       )),
-                      SizedBox(height: 20,),
-                      FadeAnimation(1.5, Text("login with OTP", style: TextStyle(color: Colors.black, fontSize: 17, fontWeight: FontWeight.bold),)),
-                      SizedBox(height: 30,),
-                      FadeAnimation(1.5, Text("Forgot Password?", style: TextStyle(color: Colors.black, fontSize: 17, fontWeight: FontWeight.bold),)),
+                      SizedBox(height: 70,),
+
                     ],
                   ),
                 )
@@ -102,3 +100,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+

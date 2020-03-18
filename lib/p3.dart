@@ -46,8 +46,7 @@ class HomePage extends StatelessWidget {
                         ),
                         child: Column(
                           children: <Widget>[
-                            FadeAnimation(1.5, Text("WELCOME TO HEALTHY KOTTAYAM !", style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),)),
-
+                            FadeAnimation(1.5, Text("WELCOME TO HEALTHY KOTTAYAM ", style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),)),
                             Container(
                               padding: EdgeInsets.all(8.0),
                               decoration: BoxDecoration(
@@ -85,7 +84,7 @@ class HomePage extends StatelessWidget {
                                 colors: [Color(0xFF02A0C7),Color(0xFF13007D)])
                         ),
                         child: Center(
-                          child: Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                          child: Text("Login", style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold),),
                         ),
                       )),
                       SizedBox(height: 20,),
@@ -102,4 +101,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
