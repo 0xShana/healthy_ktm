@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                         ),
                         child: Column(
                           children: <Widget>[
-                            FadeAnimation(1.5, Text("WELCOME TO HEALTHY KOTTAYAM !", style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),)),
+                            FadeAnimation(1.5, Text("WELCOME TO HEALTHY KOTTAYAM ", style: TextStyle(color: Colors.black, fontSize: 40, fontWeight: FontWeight.bold),)),
 
                             Container(
                               padding: EdgeInsets.all(8.0),
@@ -102,4 +102,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
